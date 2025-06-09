@@ -11,39 +11,38 @@ const HeroSection = () => {
           className="w-full h-full object-cover"
         />
         {/* Subtle overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 h-full min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left Content */}
-            <div className="text-white space-y-8 pt-20 lg:pt-0">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
-                Bringing Simplicity
-                <br />
-                <span className="block">In The Furnishing Market</span>
-              </h1>
-            </div>
+      {/* Content positioned at bottom */}
+      <div className="relative z-10 h-full min-h-screen flex items-end">
+        <div className="w-full px-6 sm:px-8 lg:px-12 pb-12 lg:pb-16">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-8 lg:gap-16">
+              {/* Left Content */}
+              <div className="text-white space-y-6 lg:max-w-2xl">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  Bringing Simplicity
+                  <br />
+                  In The Furnishing Market
+                </h1>
+              </div>
 
-            {/* Right Content */}
-            <div className="text-white space-y-8 lg:ml-auto lg:max-w-md">
-              <p className="text-lg md:text-xl leading-relaxed font-light">
-                Compatto simplifies the complex process of furnishing
-                all-inclusive, boutique & high-end hotels, and luxury residences
-                in Greece & Cyprus.
-              </p>
-              <button className="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-gray-50 transition-colors shadow-lg text-base">
-                Start Your Furnishing Journey
-              </button>
+              {/* Right Content */}
+              <div className="text-white space-y-6 lg:max-w-md flex-shrink-0">
+                <p className="text-base sm:text-lg leading-relaxed font-light">
+                  Compatto simplifies the complex process of furnishing
+                  all-inclusive, boutique & high-end hotels, and luxury
+                  residences in Greece & Cyprus.
+                </p>
+                <button className="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base">
+                  Start Your Furnishing Journey
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Decorative elements to match the warm ambiance */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
     </section>
   );
 };
