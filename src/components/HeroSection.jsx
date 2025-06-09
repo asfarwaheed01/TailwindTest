@@ -3,18 +3,15 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 overflow-hidden rounded-3xl mx-4 mt-4">
-      {/* Background Image */}
       <div className="absolute inset-0 rounded-3xl overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
           alt="Modern living room with warm lighting"
           className="w-full h-full object-cover"
         />
-        {/* Subtle overlay to ensure text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
       </div>
 
-      {/* Content positioned at bottom */}
       <div className="relative z-10 h-full min-h-screen flex items-end">
         <div className="w-full px-6 sm:px-8 lg:px-12 pb-12 lg:pb-16">
           <div className="max-w-7xl mx-auto">
